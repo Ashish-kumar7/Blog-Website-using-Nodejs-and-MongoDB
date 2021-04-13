@@ -24,7 +24,7 @@ const blog_details=(req,res)=>{
 const blog_create_get = (req, res) => {
     res.render('create', { title: 'Create a new blog' });
   }
-
+//create post 
 const blog_create_post=(req,res)=>{
     const blog=new Blog(req.body);
     blog.save()
@@ -35,7 +35,7 @@ const blog_create_post=(req,res)=>{
       console.log(err);
     })
 }
-
+//delete 
 const blog_delete=(req,res)=>{
     const id = req.params.id;
     Blog.findByIdAndDelete(id)
