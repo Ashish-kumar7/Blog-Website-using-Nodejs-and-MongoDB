@@ -7,7 +7,8 @@ const Blog = require('./models/blog');
 const app = express();
 
 //DataBase connection link(string).
-const dburl = "mongodb+srv://code-bot:code123@blog-application.licpc.mongodb.net/Blog-Website?retryWrites=true&w=majority";
+// replace with the original contents in the below dbURI
+// const dbURI = "mongodb+srv://netninja:test1234@net-ninja-tuts-del96.mongodb.net/node-tuts";
 
 //Connect using mongoose
 mongoose.connect(dburl, {
